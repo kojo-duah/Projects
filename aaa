@@ -58,7 +58,7 @@ Shared_to_Modified
 	STR		R3, [R1]			; cacheState = 3
 	DMB
 	LDR		R4, [R2]
-	LSLS	R4, R4, #1			; data *= 2
+	ADDS	R4, R4, #10			; data += 10
 	STR		R4, [R2]
 	B		Done
 ;----------------------------------------------
